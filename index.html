@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" class="general">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="style.css" rel="stylesheet"></head>
+
+<body class="general__body">
+  <div class="search-module general__search">
+    <div class="search-module__autocomplete">
+      <input type="text" class="search-module__search" autocomplete="off">
+    </div>
+    <div class="search-module__container">
+      <template class="repo-template">
+          <div class="repo">
+            <div class="repo__wrapper">
+              <div class="repo__text repo__text--name"></div>
+              <div class="repo__text repo__text--owner"></div>
+              <div class="repo__text repo__text--stars"></div>
+            </div>
+            <button class="close-button"></button>
+          </div>
+      </template>
+      
+    </div>
+  </div>
+<script type="text/javascript" src="./js/bundle.js"></script></body>
+
+</html>

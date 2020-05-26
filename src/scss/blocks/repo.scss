@@ -1,0 +1,14 @@
+.repo {
+    background: #E27BEB;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    padding-right: 34px;
+
+    &__text{
+        font-size: 24px;
+
+    }
+}

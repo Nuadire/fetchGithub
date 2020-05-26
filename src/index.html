@@ -1,14 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="general">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
-<body>
-<img src="./img/webpack.svg" alt="Webpack Logo" width="200px">
-<h3>Welcome to Webpack 4 starter </h3>
+
+<body class="general__body">
+  <div class="search-module general__search">
+    <div class="search-module__autocomplete">
+      <input type="text" class="search-module__search" autocomplete="off">
+    </div>
+    <div class="search-module__container">
+      <template class="repo-template">
+          <div class="repo">
+            <div class="repo__wrapper">
+              <div class="repo__text repo__text--name"></div>
+              <div class="repo__text repo__text--owner"></div>
+              <div class="repo__text repo__text--stars"></div>
+            </div>
+            <button class="close-button"></button>
+          </div>
+      </template>
+      
+    </div>
+  </div>
 </body>
+
 </html>

@@ -1,0 +1,30 @@
+$bgColor: #C4C4C4;
+$text: #000000;
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.general {
+    box-sizing: border-box;
+
+    &__body{
+        margin: auto;
+        font-family: "Roboto", sans-serif;
+        background-color: lightgray;
+        color: $text;
+
+    }
+
+    &__search{
+        margin:0 auto;
+    }
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}

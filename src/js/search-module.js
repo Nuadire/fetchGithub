@@ -1,4 +1,8 @@
-import {autocompliteDebounce} from "./autocomplite";
+import Model from "./autocomplite/model";
+import View from "./autocomplite/view";
+import Controller from "./autocomplite/controller";
 
-const serchInput = document.querySelector(".search-module__search");
-serchInput.addEventListener("input", autocompliteDebounce);
+
+const autocomplite = new Controller(new Model(), new View("search-module__search"));
+autocomplite.start();
+
